@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "Memory",
+    "description": "Local Markdown long-term memory with chat and work modes, extractive summaries, and no cloud upload."
+  },
+  "panel": "Memory",
+  "title": "Memory",
+  "subtitle": "Long-term memory · local Markdown · nothing leaves this machine",
+  "statusBadge": "Shell",
+  "chatTitle": "Chat memory",
+  "chatDesc": "Carried-forward digest chain with weight decay and 20-day detail recycling.",
+  "workTitle": "Work memory",
+  "workDesc": "Full-read, verbatim record for exact recall; diffs captured separately and never decay.",
+  "longTitle": "Long-term points",
+  "longDesc": "Preferences, goals, facts and constraints; no decay, always in the startup pack.",
+  "emptyCount": "0",
+  "note": "Shell only (P0): the sidebar entry and this page exist; saving, search, import and export are not wired yet. Memory lives in a 「记忆」 folder under the workspace.",
+  "version": "v0.1.0"
+}

@@ -1,0 +1,24 @@
+# 依赖
+node_modules/
+
+# 记忆库：绝对不要提交（含个人路径、聊天内容）
+记忆/
+記憶/
+memory-backup/
+*-备份-*/
+
+# 构建与运行产物
+.npm-cache/
+*.tgz
+*.log
+apply-error.log
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 内部工程日志，不公开
+进度-*.md

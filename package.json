@@ -1,0 +1,41 @@
+{
+  "name": "@local/dsh-memory",
+  "version": "0.2.0",
+  "private": false,
+  "type": "module",
+  "description": "长期记忆插件：本地 Markdown 记忆，抽取式摘要，不向云端发送内容。",
+  "keywords": ["dsh", "dsh-plugin", "memory", "markdown", "local-first"],
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "icon": "./icon.svg",
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "src/*.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/run.js && node test/store.test.js && node test/prompt.test.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}
